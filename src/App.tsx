@@ -2,7 +2,7 @@ import {useState, useCallback} from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  const countMore = useCallback(_ => setCount(count + 1), []);
+  const countMore = useCallback(() => setCount(count + 1), []);
 
   return (
     <>
