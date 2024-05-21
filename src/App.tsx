@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <h1>{count}</h1>
-      <button onClick={countMore}>Mas</button>
+      <button className="" onClick={countMore}>Mas</button>
     </>
   );
 }
