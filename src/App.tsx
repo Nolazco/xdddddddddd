@@ -2,12 +2,12 @@ import {useState, useCallback} from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  const countMore = useCallback(() => setCount(count + 1), []);
+  const countMore = useCallback(() => setCount(count + 1), [count]);
 
   return (
     <>
       <h1>{count}</h1>
-      <button onClick={countMore}></button>
+      <button onClick={countMore}>Mas</button>
     </>
   );
 }
